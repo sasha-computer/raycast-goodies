@@ -20,7 +20,6 @@ Personal [Raycast](https://raycast.com) script commands for display control, foc
 | Script | Description |
 |---|---|
 | **Toggle Focus Mode** 🎯 | Grayscale + SelfControl block + DND |
-| **Toggle Meeting Mode** 📹 | Pause Spotify, dim displays, enable DND |
 
 ### Search
 
