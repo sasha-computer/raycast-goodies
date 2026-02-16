@@ -2,27 +2,27 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Toggle Grayscale
+# @raycast.title Toggle Invert Colors
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon 🩶
+# @raycast.icon 🔲
 # @raycast.packageName Display
 
 # Documentation:
-# @raycast.description Toggle grayscale mode on all displays via BetterDisplay
+# @raycast.description Toggle inverted colors on all displays via BetterDisplay
 
 CLI="/opt/homebrew/bin/betterdisplaycli"
-STATE_FILE="/tmp/betterdisplay-grayscale-state"
+STATE_FILE="/tmp/betterdisplay-invert-state"
 
 if [ -f "$STATE_FILE" ]; then
     "$CLI" perform -nameLike="LG" -standardFramebuffer
     "$CLI" perform -nameLike="Built" -standardFramebuffer
     rm "$STATE_FILE"
-    echo "Color mode restored"
+    echo "Normal colors restored"
 else
-    "$CLI" perform -nameLike="LG" -grayscaleFramebuffer
-    "$CLI" perform -nameLike="Built" -grayscaleFramebuffer
+    "$CLI" perform -nameLike="LG" -invertedFramebuffer
+    "$CLI" perform -nameLike="Built" -invertedFramebuffer
     touch "$STATE_FILE"
-    echo "Grayscale mode enabled"
+    echo "Colors inverted"
 fi
