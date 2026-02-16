@@ -13,4 +13,13 @@
 # Documentation:
 # @raycast.description Search X likes, bookmarks, and tweets via SQLite FTS5
 
-cd ~/Developer/x && uv run search.py "$1" --limit 10
+cd ~/Developer/x
+
+echo "━━━ Likes ━━━"
+uv run search.py --table likes "$1" --limit 5 2>&1
+echo ""
+echo "━━━ Bookmarks ━━━"
+uv run search.py --table bookmarks "$1" --limit 5 2>&1
+echo ""
+echo "━━━ Tweets ━━━"
+uv run search.py --table tweets "$1" --limit 5 2>&1
