@@ -11,6 +11,6 @@
 # @raycast.argument1 { "type": "text", "placeholder": "query" }
 
 # Documentation:
-# @raycast.description Search 13K+ X/Twitter likes, bookmarks, and own tweets via SQLite FTS5
+# @raycast.description Search X likes, bookmarks, and tweets via SQLite FTS5
 
 cd ~/Developer/x && uv run search.py "$1" --limit 10

@@ -27,7 +27,7 @@ Personal [Raycast](https://raycast.com) script commands for display control, foc
 | Script | Description |
 |---|---|
 | **Search Emails** 📧 | Search 42K+ emails via local SQLite FTS5 |
-| **Search X Likes** 𝕏 | Search 13K+ X/Twitter likes, bookmarks, tweets |
+| **Search X Likes** 𝕏 | Search X likes, bookmarks, and tweets |
 | **Search Readwise Reader** 📚 | Search saved articles and highlights |
 | **Search Pi Sessions** 🥧 | Search pi coding agent session history |
 
